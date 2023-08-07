@@ -8,9 +8,5 @@ app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname,'/views/home.html'))
 });
 
-
-
-
-
 app.listen ((3080), () => console.log ('servidor corriendo'))
 
