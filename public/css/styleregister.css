@@ -104,7 +104,6 @@ img{
 
 @media (min-width:768px){
     .main-header-top-bar{
-        border:dotted 2px red;
         display: flex;
         justify-content: space-between;
     }

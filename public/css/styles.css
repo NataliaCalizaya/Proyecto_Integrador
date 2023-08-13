@@ -26,12 +26,15 @@ header{
     box-sizing: border-box;
 }
 .logo{
-    width: 50%;
+    padding: 2% 2% 2% 4px;
+    width: 45%;
+    box-sizing: border-box;
 }
-.subtitulo-header{
+.Subtitulo-header{
     color: black;
-    font-weight: 40%;
     text-align: center;
+    display: flex;
+    align-items: center;
 }
 .main-navbar ul {
     list-style: none;
@@ -44,6 +47,36 @@ header{
     display: inline-block;
     padding: 5px 0;
     font-size: 17px;
+}
+.Descripciones{
+    visibility: hidden;
+}
+
+.producto-1:hover .Descripciones {
+    visibility: initial;
+}
+.producto-1:hover .fa-truck{
+    animation:camion 3s 1;
+    
+}
+@keyframes camion {from {transform: rotate(0deg);}
+    to {transform: rotate(-90deg);}}
+@-webkit-keyframes rotate {from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(-90deg);}}
+.imgr{
+    -webkit-animation: 3s rotate linear 1;
+    animation: 3s rotate linear 1;
+    -webkit-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+}
+.tarjeta:hover .fa-credit-card {
+    color:#0022AA;
+}
+.regalo:hover .fa-gift{
+    color:#0022AA;
+}
+.usuario:hover .fa-user-shield{
+    color:#0022AA;
 }
 .Cuerpos_de_texto, .busqueda {
     font-size: 12px;
@@ -79,13 +112,6 @@ header{
     text-align: left;
     font-family: 'Roboto', sans-serif;
 }
-.Descripciones{
-    opacity: 0;
-}
-.producto-1:hover > .Descripciones{
-    opacity: 1;
-}
-
 
 .Descripciones,h1{
     color:#666
@@ -146,7 +172,7 @@ h3{
 }
 
 footer{
-    border: #1259c3 solid;
+    
     font-family: 'Roboto', sans-serif;
     text-align: center;
     box-sizing:border-box;
@@ -219,7 +245,6 @@ main{
     }
     .basado-en-tu-ultima-visita, .ofertas{
         display: flex;
-        border:dotted 2px red;
         flex-wrap: wrap;
         align-content: space-around;
     }
@@ -234,7 +259,7 @@ main{
 
 @media (min-width:361px) and (max-width:767px){  
  
-    .producto-1{ 
+    .producto-1:hover{ 
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
     }
     .burger-menu{
@@ -243,12 +268,9 @@ main{
     nav{
         display: initial;
     }
-    .Descripciones:hover{
-        display: initial;
-    }
+
     .basado-en-tu-ultima-visita, .ofertas{
         display: flex;
-        border:dotted 2px red;
         flex-wrap: wrap;
         align-content: space-around;
     }
@@ -270,17 +292,17 @@ main{
 
 @media (min-width:768px){
     .main-header-top-bar{
-        border:dotted 2px red;
         display: flex;
         justify-content: space-between;
     }
     .Descuentos{
         text-align: right;
     }
-    }
-    .Descripciones {
+    .Descripciones{
+    
         font-size: 82%;
     }
+        
     .subtitulo-header{
         max-width: 350px;
         text-align: right;
@@ -297,7 +319,6 @@ main{
     }
     .basado-en-tu-ultima-visita, .ofertas{
         display: flex;
-        border:dotted 2px red;
         flex-wrap: wrap;
         align-content: space-around;
     }
@@ -311,7 +332,19 @@ main{
         margin: 1%;
         flex-grow: 0.25;
     }
-
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    
+    .ref1{
+        height: 10%;
+        width: 10%;
+        margin: 1%;
+        flex-grow: 0.4;
+    }
+}
 
 
 
