@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "start": "npx nodemon node app.js",
-    "dev": "npx nodemon app.js"
+    "start":"npx nodemon app.js",
+    "test": "nodemon views/app.js"
   },
   "keywords": [],
   "author": "",
