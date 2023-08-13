@@ -1,0 +1,212 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: #ebebeb;
+    }
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+        }
+    .img{
+        width: 100vw;
+    
+    }
+    header{
+        background-color: #EAC926;
+    }
+    .basado-en-tu-ultima-visita, .ofertas{
+        width: 90vw;
+        margin: auto;
+    }
+    .main-header {
+        width: 100vw;
+        padding: 5px;
+        background-color: #EAC926; 
+        color:black;
+        box-sizing: border-box;
+    }
+    .logo{
+        width: 50%;
+    }
+
+    .main-navbar ul {
+        list-style: none;
+        margin:0;
+        padding: 0;
+    }
+    .main-navbar a {
+        text-decoration: none;
+        color:#222222;
+        display: inline-block;
+        padding: 5px 0;
+        font-size: 17px;
+    }
+    .Cuerpos_de_texto, .busqueda {
+        font-size: 12px;
+        color:black; 
+    }
+    .busqueda {
+        display: flex;
+        text-align: justify;
+        align-items: center;
+    }
+    .titulares {
+        height: 5%;
+        width: 100%;
+        font-size: 24px;
+        
+        margin-left: 2%;
+    }
+    .producto-1{
+        height:100%;
+        width: 100%;
+        background-color: white;
+    }
+    .burger-menu{
+        background-color: #1259c3;
+        color:white;
+        display: block;
+        max-width: 50px;
+        max-height: 50px;
+        text-align: center;
+        font-size: 2em; 
+        padding: 5px 3px; 
+        border-radius: 8px;
+        margin:auto;
+    }
+    .tarjeta, .regalo, .usuario{
+        text-align: center;
+    }
+    
+    .regalo i, .tarjeta i, .usuario i{
+        background: white;
+        color:#1259c3;
+        font-size: 2em;
+        padding: 1px; 
+        border-radius: 15%;
+        align-items: center;
+    }
+    footer{
+        border: #1259c3 solid;
+        font-family: 'Roboto', sans-serif;
+        text-align: center;
+        box-sizing:border-box;
+    }
+    main{
+        background-color: #ebebeb;
+    } 
+              
+    input{
+        padding: 3px;
+        height: 4vh;
+        width: 80vw;
+        margin: auto;
+    }
+    .barra-busqueda{
+        width: 20vw;
+    }
+    .boton-enviar{
+        font-family: 'Roboto', sans-serif;
+        color: #fff;
+        width: 80vw;
+        
+        background-color: #1259c3 ;
+    }
+    button:hover{
+        background-color: #0022AA ;
+    }
+    .boton{
+
+        width: 80vw;
+        margin: auto;
+    }
+    .formulario{
+        margin: 10vw;
+    }
+@media(min-width:2px) and (max-width:360px){ 
+
+    nav{
+        display: none;
+    }
+    .main-header {
+        width: 100vw;
+        padding: 5px;
+        box-sizing: border-box;
+    }
+    .logo{
+        width: 50%;
+        float: left;
+    }
+    .busqueda{
+        width: 50%;
+        text-align: center;
+        float: left;
+    }
+    .subtitulo-header{
+        color: rgb(182, 164, 164);
+        font-weight: 40%;
+        text-align: left;
+    }
+    .Subtitulo-header{
+        width: 100%;
+        margin:2%;
+    }
+}
+
+@media (min-width:361px) and (max-width:767px){  
+ 
+    .producto-1{ 
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    }
+    .burger-menu{
+        display: none;
+    }
+    nav{
+        display: initial;
+    }
+
+
+    
+}
+
+
+@media (min-width:768px){
+    .main-header-top-bar{
+        border:dotted 2px red;
+        display: flex;
+        justify-content: space-between;
+    }
+    .subtitulo-header{
+        max-width: 350px;
+        text-align: right;
+    }
+    .main-navbar{
+        display: flex;
+        justify-content: space-between;
+    }
+    .main-navbar ul{
+        display: flex;
+    }
+    .main-navbar li{
+        margin: 0 5px;
+    }
+    .container{
+        display: flex;
+        border:dotted 2px red;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+    
+    .ref1{
+        height: 10%;
+        width: 10%;
+        margin: 1%;
+        flex-grow: 0.4;
+    }
+
+}
